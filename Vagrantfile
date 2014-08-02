@@ -102,6 +102,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # If you have your own Chef Server, use the appropriate URL, which may be
   # HTTP instead of HTTPS depending on your configuration. Also change the
   # validation key to validation.pem.
+
+  config.omnibus.chef_version = :latest
   
   config.vm.provision :chef_client do |chef|
     chef.provisioning_path = "/etc/chef"
