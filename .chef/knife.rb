@@ -11,3 +11,6 @@ chef_server_url          "https://api.opscode.com/organizations/frabs"
 cache_type               'BasicFile'
 cache_options( :path => "#{ENV['HOME']}/.chef/checksums" )
 cookbook_path            ["#{current_dir}/../cookbooks"]
+cookbook_copyright 		 "frabs"
+cookbook_license 		 "apachev2"
+cookbook_email 			 "mafraba@gmail.com"
